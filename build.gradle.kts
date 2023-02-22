@@ -6,6 +6,8 @@ plugins {
 
 indra {
     javaVersions().target(17)
+    publishSnapshotsTo("paperSnapshots", "https://repo.papermc.io/repository/maven-snapshots/")
+    publishReleasesTo("paper", "https://repo.papermc.io/repository/maven-releases/")
 }
 
 repositories {
