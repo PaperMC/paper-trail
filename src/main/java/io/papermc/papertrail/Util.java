@@ -6,7 +6,6 @@ import org.checkerframework.framework.qual.DefaultQualifier;
 @DefaultQualifier(NonNull.class)
 final class Util {
     static final String EQUALS_LINE = "====================================================";
-    static final String SHOWN_LONG_MESSAGE = "paper-trail.shown-long-message";
     static final boolean PAPER = hasClass("com.destroystokyo.paper.PaperConfig")
         || hasClass("io.papermc.paper.configuration.Configuration");
 
