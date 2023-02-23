@@ -36,19 +36,20 @@ public class RequiresPaperPlugins extends JavaPlugin {
     private List<String> requiresPaper() {
         final String pluginName = this.getDescription().getName();
         return Arrays.asList(
-            " " + pluginName + " only supports Paper and derivatives, not Spigot or CraftBukkit.",
+            " " + pluginName + " is a Paper plugin, meaning it only supports",
+            " Paper and derivatives, not Spigot or CraftBukkit.",
             "",
             " Paper offers significant performance improvements,",
             " bug fixes, security enhancements and optional",
             " features for server owners to enhance their server.",
+            " And provides developers an improved and expanded plugin",
+            " development API.",
             "",
-            " Paper includes Timings v2, which is significantly",
-            " better at diagnosing lag problems over v1.",
+            " All of your Bukkit and Spigot plugins should still work,",
+            " on Paper, and the community will gladly help you fix any",
+            " issues.",
             "",
-            " All of your plugins should still work, and the",
-            " Paper community will gladly help you fix any issues.",
-            "",
-            " Join the Paper Community @ https://papermc.io"
+            " Download Paper and join the community @ https://papermc.io"
         );
     }
 }
