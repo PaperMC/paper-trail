@@ -30,7 +30,7 @@ public class RequiresPaperPlugins extends JavaPlugin {
 
     private List<String> outdatedPaper() {
         final String pluginName = this.getDescription().getName();
-        return Arrays.asList(" " + pluginName + " requires Paper 1.19.3 build #405 or newer.");
+        return Arrays.asList(" " + pluginName + " requires Paper 1.19.4 or newer.");
     }
 
     private List<String> requiresPaper() {
