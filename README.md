@@ -20,7 +20,7 @@ support the Paper plugin system.
 ### How to Use
 
 Add the PaperMC repository (`https://repo.papermc.io/repository/maven-public/`) to your build script
-and shade `io.papermc:paper-trail:1.0.0`
+and shade `io.papermc:paper-trail:1.0.1`
 into your plugin.
 It is recommended to relocate the `io.papermc.papertrail`
 package to avoid conflicts.
