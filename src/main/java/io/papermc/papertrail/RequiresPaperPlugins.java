@@ -21,7 +21,8 @@ public class RequiresPaperPlugins extends JavaPlugin {
         final List<String> lines = new ArrayList<>(Arrays.asList("", Util.EQUALS_LINE));
         lines.addAll(Util.PAPER ? this.outdatedPaper() : this.requiresPaper());
         lines.add(Util.EQUALS_LINE);
-        this.getLogger().log(Level.SEVERE, String.join("\n", lines), new UnsupportedPlatformException("Unsupported platform"));
+        this.getLogger().log(Level.SEVERE, String.join("\n", lines),
+            new UnsupportedPlatformException("Unsupported platform"));
     }
 
     private void disable() {
@@ -30,7 +31,12 @@ public class RequiresPaperPlugins extends JavaPlugin {
 
     private List<String> outdatedPaper() {
         final String pluginName = this.getDescription().getName();
-        return Arrays.asList(" " + pluginName + " requires Paper 1.19.4 or newer.");
+        return Arrays.asList(
+            " " + pluginName + " requires a newer version of Paper.",
+            " You can often find a list of supported game versions",
+            " at the webpage you obtained the plugin from. You could",
+            " also contact the plugin author for assistance."
+        );
     }
 
     private List<String> requiresPaper() {
