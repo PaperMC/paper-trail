@@ -17,6 +17,7 @@ indra {
     publishReleasesTo("paper", "https://repo.papermc.io/repository/maven-releases/")
     mitLicense()
     github("PaperMC", "paper-trail")
+    signWithKeyFromProperties("signingKey", "signingPassword")
 }
 
 repositories {
